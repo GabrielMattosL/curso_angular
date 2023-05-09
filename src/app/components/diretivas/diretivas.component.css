@@ -1,0 +1,15 @@
+.mudaCor {
+    color: aqua;
+}
+
+.mudaFundo {
+    background-color: green;
+}
+
+.mudaFonte {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mudaTamanho {
+    font-size: 2rem;
+}
