@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Animal } from 'src/app/Animal';
+import { Itens } from 'src/app/Itens';
+import { Books } from 'src/app/Books';
 import { ListService } from 'src/app/service/list.service';
 
 @Component({
@@ -8,17 +10,15 @@ import { ListService } from 'src/app/service/list.service';
   styleUrls: ['./list-render.component.css']
 })
 export class ListRenderComponent {
-  animals: Animal[] = [
-    {name: "Turca", type: "Dog", age: 4},
-    {name: "Tom", type: "Cat", age: 1},
-    {name: "Frida", type: "Dog", age: 3},
-    {name: "Bob", type: "Horse", age: 2},
-    {name: "Neemo", type: "Fish", age: 5}
-  ]
-
+  animals: Animal[] = []
+  itens: Itens[] = []
+  books: Books[] = []
   animalDetails = ''
 
-  constructor(private listService: ListService) {}
+  constructor(private listService: ListService) {
+    this.getAnimals();
+    this.getItens();
+  }
 
   showAge(animal: Animal) {
     this.animalDetails = `O pet ${animal.name} tem ${animal.age} ano(s)`
@@ -27,6 +27,18 @@ export class ListRenderComponent {
   removeAnimal(animal: Animal) {
     console.log("Removendo animal")
     this.animals = this.listService.remove(this.animals, animal)
+  }
+
+  getAnimals(): void {
+    this.listService.getAll().subscribe((animals) => (this.animals = animals));
+  }
+  
+  getItens(): void {
+    this.listService.getTo().subscribe((itens) => (this.itens = itens));
+  }
+
+  getBooks(): void {
+    this.listService.getBo().subscribe((books) => (this.books = books))
   }
 }
 

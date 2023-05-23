@@ -7,5 +7,20 @@
             <button (click)="removeAnimal(animal)">Excluir</button>
         </li>
     </ul>
+    <ul>
+        <li *ngFor="let item of itens">
+            Nome: {{item.nome}}
+            Id: {{item.id}}
+            Descrição: {{item.descricao}}
+        </li>
+    </ul>
+    <ul>
+        <li *ngFor="let book of books">
+            Id: {{book.id}}
+            Título: {{book.title}}
+            Autor: {{book.author}}
+            Gênero: {{book.genre}}
+        </li>
+    </ul>
     <h3>{{animalDetails}}</h3>
 </div>

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
@@ -26,11 +27,12 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     ChangeNumberComponent,
     ListRenderComponent,
     PipesComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule, 
+    FormsModule,
+    HttpClientModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

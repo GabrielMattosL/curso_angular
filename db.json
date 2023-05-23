@@ -1,0 +1,24 @@
+{
+    "animals": [
+    {"id": 1,"name": "Turca", "type": "Dog", "age": 4},
+    {"id": 2,"name": "Tom", "type": "Cat", "age": 1},
+    {"id": 3,"name": "Frida", "type": "Dog", "age": 3},
+    {"id": 4,"name": "Bob", "type": "Horse", "age": 2},
+    {"id": 5,"name": "Neemo", "type": "Fish", "age": 5}
+  ],
+
+    "itens":  [
+    {"id": 1, "nome": "Item 1", "descricao": "Descrição do item 1"},
+    {"id": 2, "nome": "Item 2", "descricao": "Descrição do item 2"},
+    {"id": 3, "nome": "Item 3", "descricao": "Descrição do item 3"}
+  ],
+
+    "books": [
+    {"id": 1, "title": "O Senhor dos Anéis", "author": "J.R.R. Tolkien", "genre": "Fantasia"},
+    {"id": 2, "title": "1984", "author": "George Orwell", "genre": "Distopia"},
+    {"id": 3, "title": "Dom Quixote", "author": "Miguel de Cervantes", "genre": "Clássico"},
+    {"id": 4, "title": "Orgulho e Preconceito", "author": "Jane Austen", "genre": "Romance"},
+    {"id": 5, "title": "A Revolução dos Bichos", "author": "George Orwell", "genre": "Sátira"}
+  ]
+  
+}
