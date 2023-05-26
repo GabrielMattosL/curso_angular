@@ -33,4 +33,7 @@ export class ListService {
     return this.http.get<Books[]>(this.getBoUrl)
   }
   
+  getItem(id: number): Observable<Animal> {
+    return this.http.get<Animal>(`${this.apiUrl}/${id}`)
+  }
 }

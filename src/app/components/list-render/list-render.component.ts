@@ -18,6 +18,7 @@ export class ListRenderComponent {
   constructor(private listService: ListService) {
     this.getAnimals();
     this.getItens();
+    this.getBooks();
   }
 
   showAge(animal: Animal) {
@@ -38,7 +39,7 @@ export class ListRenderComponent {
   }
 
   getBooks(): void {
-    this.listService.getBo().subscribe((books) => (this.books = books))
+    this.listService.getBo().subscribe((books) => (this.books = books));
   }
 }
 
